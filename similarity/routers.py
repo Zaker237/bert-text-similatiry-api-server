@@ -3,7 +3,7 @@ from datetime import datetime
 
 from fastapi import APIRouter
 from sklearn.metrics.pairwise import cosine_similarity
-from similatity.schemas import PostSimilaritySchema, ResultSchema
+from similarity.schemas import PostSimilaritySchema, ResultSchema
 from sentence_transformers import SentenceTransformer
 
 model = SentenceTransformer('bert-base-nli-mean-tokens')
